@@ -22,11 +22,13 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly efficient, in addition to restricting traffic to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+- Load balancers protects systems from network attacks such as DDOS, allowing the strain on a network to be distributed over multiple machines. 
+- A jump-box aids in this protection as it provides a protective layer for the network as it acts as a gateway preventing unwanted traffic through and makes successful cyber-attacks on the server much more difficult. 
+
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 - Filebeat: Watches for log data abotu the file system/machine.
-- Metricbeat: Records a machines metrics
+- Metricbeat: Records a machines metrics.
 
 The configuration details of each machine may be found below.
 
@@ -35,7 +37,7 @@ The configuration details of each machine may be found below.
 | Jump Box  | Gateway                       | 10.0.0.4   | Linux            |
 | Web-1     | Load-balanced web server      | 10.0.0.5   | Linux            |
 | Web-2     | Load-balanced web server      | 10.0.0.6   | Linux            |
-| ELK-SERVER| Recieve logs from web servers | 10.1.0.4   | Linux            |
+| ELK-SERVER| Receive logs from web servers | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
@@ -95,15 +97,15 @@ SSH into the control node and follow the steps below:
 
 [webservers]
 
--10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+- 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
 
--10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+- 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 
--10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+- 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 
 [elk]
 
--10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+- 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 

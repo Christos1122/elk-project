@@ -59,7 +59,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Jump Box     | Yes                 | 101.186.35.71        |
 
-| Web-1, Web-2 | NO                  | 104.210.74.217       |
+| Web-1, Web-2 |             NO      | 104.210.74.217       |
 
 | ELK-SERVER   | NO                  | 104.210.74.217       |
 

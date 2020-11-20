@@ -40,7 +40,7 @@ Load balancing ensures that the application will be highly efficient, in additio
 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- Filebeat: Watches for log data abotu the file system/machine.
+- Filebeat: Watches for log data about the file system/machine.
 - Metricbeat: Records a machines metrics.
 
 The configuration details of each machine may be found below.
@@ -133,7 +133,7 @@ You then add the subheading (webservers) inside the install file under subheadin
 Commands for user to update and install everything correctly for use.
 1.	Download the playbook in its entirety. 
 2.	Move files to ~/etc/ansible (create directory if not there)
-3.	Move files "Ansible.cfg and Filebeat.cfg" to the "files" subdirectory. Move files "Elk-Install, Install-docker&containers and Filebeat-Install" to the "Roles" subdirectory. Move the file "hosts" to main ansible directory. 
+3.	Move files "Ansible.cfg and Filebeat.cfg" to the "Files" subdirectory. Move files "Elk-Install, Install-docker&containers and Filebeat-Install" to the "Roles" subdirectory. Move the file "hosts" to main ansible directory. 
 4.	Edit hosts file to contain the IP address (as shown above) of the machines they want to have the playbook run on. -Also note machine IPs must be under subheadings that will correspond with install files to ensure correct files get installed on correct machines.
 5.	Edit install files (Docker, ELK & Filebeat) to ensure hosts and remote user are correct in relation to “hosts” file subheadings and user account. 
 6.	Run command “ansible-playbook ~/etc/ansible/roles/Install_docker&containers”.

@@ -112,9 +112,9 @@ SSH into the control node and follow the steps below:
 
 -10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Run the playbook, and navigate to your targetted machines to check that the installation worked as expected.
 
-- The ansible.cfg file is the playbook, which is copied from ........
+- The ansible.cfg file is the playbook, which is copied from the files attached to this page. 
 - Do update and run the playbook on a specific machine and then specify which machine to install beats on, you edit the “hosts” file with a subheading and IP address and a file path. Eg. 
 [webservers]
 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
@@ -125,7 +125,7 @@ You then add the subheading (webservers) inside the install file under subheadin
 Commands for user to update and install everything correctly for use.
 1.	Download the playbook in its entirety. 
 2.	Move files to ~/etc/ansible (create directory if not there)
-3.	Move files to roles and hosts****
+3.	Move files "Ansible.cfg and Filebeat.cfg" to the "files" subdirectory. Move files "Elk-Install, Install-docker&containers and Filebeat-Install" to the "Roles" subdirectory. Move the file "hosts" to main ansible directory. 
 4.	Edit hosts file to contain the IP address (as shown above) of the machines they want to have the playbook run on. -Also note machine IPs must be under subheadings that will correspond with install files to ensure correct files get installed on correct machines.
 5.	Edit install files (Docker, ELK & Filebeat) to ensure hosts and remote user are correct in relation to “hosts” file subheadings and user account. 
 6.	Run command “ansible-playbook ~/etc/ansible/roles/Install_docker&containers”.

@@ -54,9 +54,13 @@ Machines within the network can only be accessed by SSH through the use of conta
 A summary of the access policies in place can be found in the table below.
 
 | Name         | Publicly Accessible | Allowed IP Addresses | 
+
 |--------------------------------|--------------------------|
+
 | Jump Box     | Yes             | 101.186.35.71            |
+
 | Web-1, Web-2 | NO              | 104.210.74.217           |
+
 | ELK-SERVER   | NO              | 104.210.74.217           |
 
 ### Elk Configuration

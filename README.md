@@ -8,12 +8,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - Playbook files
  https://github.com/Christos1122/elk-project/find/main 
-- Ansible.cfg
-- Hosts
-- Install-docker&containers
-- Filebeat.cfg
-- Filebeat-Install
-- Elk-Install
+-Ansible.cfg
+-Hosts
+-Install-docker&containers
+-Filebeat.cfg
+-Filebeat-Install
+-Elk-Install
 
 This document contains the following details:
 - Description of the Topology

@@ -10,10 +10,15 @@ These files have been tested and used to generate a live ELK deployment on Azure
  https://github.com/Christos1122/elk-project/find/main 
 
 -Ansible.cfg
+
 -Hosts
+
 -Install-docker&containers
+
 -Filebeat.cfg
--Filebeat-Install
+
+-Filebeat-Install|
+
 -Elk-Install
 
 This document contains the following details:
